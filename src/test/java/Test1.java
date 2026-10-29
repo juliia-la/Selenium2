@@ -36,6 +36,8 @@ public class Test1 {
 
         Assert.assertEquals(pageTitle, "IT-школа з оплатою після працевлаштування | Skill Klan", "Заголовок сторінки не збігається!");
     }
+
+
     @Test
     public void myButtonClickTest() {
 
@@ -64,7 +66,7 @@ public class Test1 {
 
 
         WebElement myButtonClickBlog = wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("//a[contains(text(), 'Блог') or contains(., 'Блог')]")));
+                By.xpath("//a[contains(text(), 'Блог')]")));
 
         myButtonClickBlog.click();
 
