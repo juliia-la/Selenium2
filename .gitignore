@@ -37,3 +37,11 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Временные файлы сборки Maven
+target/
+${project.build.directory}/
+*.class
+
+# Логи и временные файлы
+*.log
