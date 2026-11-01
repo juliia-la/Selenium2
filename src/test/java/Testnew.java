@@ -83,7 +83,7 @@ public class Testnew {
         String actualText = pageTitleQar.getText().trim();
         System.out.println("Назва статті: " + actualText);
 
-        // Використовуємо assertTrue разом з equalsIgnoreCase, щоб регістр літер (великі/малі) не ламав тест
+        
         Assert.assertTrue(actualText.equalsIgnoreCase("Що насправді робить тестувальник"), "Текст не збігається! Отримано: [" + actualText + "]");
     }
 
