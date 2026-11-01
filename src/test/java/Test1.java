@@ -36,7 +36,7 @@ public class Test1 {
 
         Assert.assertEquals(pageTitle, "IT-школа з оплатою після працевлаштування | Skill Klan", "Заголовок сторінки не збігається!");
     }
-
+    //зміни для гілки gilka
 
     @Test
     public void myButtonClickTest() {
