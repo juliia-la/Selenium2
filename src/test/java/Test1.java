@@ -17,7 +17,7 @@ public class Test1 {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        // 2. Создаем экземпляр (объект) класса сторінки
+
         mainPage = new MainPage(driver);
     }
 
