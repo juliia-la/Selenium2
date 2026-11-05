@@ -116,7 +116,6 @@ public class Test1 {
         WebElement statyQa = wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//a[@class='post-card__link' and @href='/blog/yak-staty-qa-testuvalnykom/']")));
 
-        // Скролимо так, щоб елемент опинився по центру екрана
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", statyQa);
 
         new Actions(driver)
@@ -128,7 +127,7 @@ public class Test1 {
         boolean isArticleUrl = wait.until(ExpectedConditions.urlContains("/blog/yak-staty-qa-testuvalnykom/"));
         Assert.assertTrue(isArticleUrl, "Клік не привів до переходу на сторінку статті!");
 
-        // Виправлений XPath для пошуку дати (додано // на початок)
+
         WebElement dateElement = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//p[@class='page-head__date mono']")));
 
@@ -136,7 +135,7 @@ public class Test1 {
 
         System.out.println("Знайдена дата публікації: " + dateText);
 
-        // Враховуємо регістр тексту на сторінці (великі літери)
+
         Assert.assertEquals(dateText, "ОПУБЛІКОВАНО 26 СЕРПНЯ 2026 · ОНОВЛЕНО 14 ЖОВТНЯ 2026", "Дата не збігається!");
     }
 
